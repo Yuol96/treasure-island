@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Waitting{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<!-- <script src="wait.js"></script> -->
+<div class="container">
+  <h5>Room</h5>
+  <form method="post">
+    <input type="submit" name="room_button" value="createroom">
+    <input name="roomid" value="{{ request.form['roomid'] }}">
+    <input type="submit" name="room_button" value="joinroom">
+    <!-- <button id="joinroom">Join Room</button>
+    <input type="roomid" name="roomid"> -->
+  </form>
+  <h5>Records</h5>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Time</th>
+        <th scope="col">Score</th>
+        <th scope="col">Players</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for k,v in records.items() %}
+        <tr>
+          <th scope="row">{{ k }}</th>
+          <td>{{ v['score'] }}</td>
+          <td>{{ ','.join(v['players']) }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+</div>
+{% endblock %}

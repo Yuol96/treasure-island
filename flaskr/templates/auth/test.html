@@ -1,0 +1,168 @@
+<html>
+<style type="text/css">
+	
+	#game_lobby{
+		width:100%;
+		height:950px;
+		background-color: white;
+	}
+	#room_infor{
+		width:100%;
+		height:70%;
+	}
+	#room_state{
+		width:100%;
+		height:5%;
+		background-color: gray;
+	}
+	#room_num{
+		width:30%;
+		height:100%;
+		float:left;
+		text-align: center;
+		font-size: 24px;
+	}
+	#refresh{
+		width:5%;
+		height:100%;
+		float: right;
+		text-align: center;
+		font-size: 24px;
+	}
+	#room_member{
+		width:100%;
+		height: 95%;
+		font-size: 24px;
+	}
+	#player_state{
+		width: 100%;
+		height: 10%;
+	}
+	#ready{
+		width:10%;
+		height:50%;
+		float: left;
+		text-align: center;
+		font-size: 24px;
+	}
+	#leave{
+		width:10%;
+		height:50%;
+		float: left;
+		text-align: center;
+		font-size: 24px;
+	}
+
+	#waiting{
+		width:100%;
+		height:950px;
+		background-color: darkgray;
+		margin: 0px;
+	}
+	div#player{
+		width:70%;
+		height:100%;
+		background-color: aqua;
+		float:left;
+	}
+	div#room{
+		width:30%;
+		height:100%;
+		background-color: white;
+		float:right;
+	}
+	div#information{
+		width:100%;
+		height:5%;
+		background-color: gray;
+
+	}
+	div#record{
+		width:100%;
+		height:80%;
+		font-size: 24px;
+	}
+	div#playername{
+		width:20%;
+		height:100%;
+		float:left;
+		text-align: center;
+		font-size: 24px;
+	}
+	div#playersocle{
+		width:80%;
+		height:100%;
+		float:right;
+		font-size: 24px;
+	}
+	div#createroom{
+		width:100%;
+		height:30%;
+	}
+	div#joinroom{
+		width:100%;
+		height:70%;
+	}
+	#create{
+		height:30%;
+		width:50%;
+		font-size: 40px;
+	}
+	#join{
+		width:50%;
+		height:13%;
+		font-size: 40px;
+	}
+	#roomid{
+		width:20%;
+		height:2%;
+		font-size: 15px;
+	}
+</style>
+<head>
+	<div id="game_lobby">
+		<div id="room_infor">
+			<div id="room_state">
+				<div id="room_num">online players:0</div>
+				<button id="refresh">Refresh</button>
+			</div>
+			<div id="room_member"></div>
+		</div>
+
+
+
+		<div id=player_state>
+			<button id="ready">Ready</button>
+			<button id="leave">Leave</button>
+		</div>
+
+
+	</div>
+</head>
+<body>
+	<div id="waiting" class="MyNamespace">
+		<div id="player">
+			<div id="information">
+				<div id="playername">play_name</div>
+				<div id="playersocle">120</div>
+			</div>
+			<div id="record">none</div>
+		</div>
+
+		<div id="room">
+			<div id="createroom">
+				<button id="create">Create Room</button>
+			</div>
+			<div id="joinroom">
+				<button id="join">Join Room</button>
+				<input type="roomid" name="roomid">
+			</div>
+		</div>
+
+
+
+	</div>
+
+
+</body>
+</html>
